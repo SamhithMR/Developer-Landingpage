@@ -1,0 +1,400 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300vh;
+  position: relative;
+
+}
+
+
+
+/* header */
+header {
+  background-color: blue;
+  color: #fff;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* navigation bar starts */
+.nav-item {
+  margin-right: 10px 10%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav-item-active,
+.nav-item:hover {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+}
+
+nav {
+  display: none;
+}
+
+
+/* logo */
+header div:first-of-type {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.logo {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* header */
+.header-text {
+  width: 50%;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header-text h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.header-text p {
+  font-size: 1em;
+}
+
+/* Image */
+header div:last-of-type img {
+  filter: drop-shadow(.2rem .6rem 1rem rgba(0, 0, 0, 0.2));
+  width: 30%;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.header-image {
+  width: 100%;
+}
+
+
+@media (min-width:1024px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+  }
+}
+
+@media  (max-width:1024px){
+
+ .header-image{
+  display: none;
+ }
+.header-text {
+  max-width: 100%;
+  min-width: 70%;
+}
+
+.header-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header-text p {
+  font-size: 1em;
+}
+}
+@media (min-width:320px) and (max-width:768px){
+  header{
+    height: 80vh;
+  }
+  
+  .header-text h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .header-text p {
+    font-size: 0.5em;
+  }
+}
+
+
+/* companies */
+.companies {
+  /* margin: 30px 0; */
+}
+
+.companies a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: #000;
+  font-family: "Righteous";
+  padding: 10px 20px;
+}
+
+
+
+/* API */
+.api {
+  /* background-color: green; */
+}
+
+.cards {
+  /* background-color: red; */
+  padding: 10px 30px;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  /* grid-template-columns: repeat(5,20%); */
+}
+
+.card {
+  padding: 30px 10px;
+}
+
+.card:hover,
+.card-active {
+  background-color: #fff;
+  box-shadow: .1rem .2rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+
+/* blog section */
+
+.blog-heding {
+  /* padding: 40px 0;
+  margin: 40px 0; */
+}
+
+/* Blogs */
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35vw, 45vw));
+  grid-gap: 20px;
+  padding: 10px 20px;
+}
+
+.blog-card {
+  /* columns: 2; */
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  /* filter:drop-shadow(.2rem .6rem 1rem rgba(0, 0, 0 , 0.2) ); */
+  box-shadow: .2rem .6rem 1rem rgba(0, 0, 0, 0.2);
+  /* border: 1px solid black; */
+  position: relative;
+  border-radius: 40px 0 0 0;
+  min-width: 50%;
+}
+
+.blog-bottom {
+  position: absolute;
+  bottom: -30px;
+  right: 30%;
+}
+
+.blog-author {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 50%;
+}
+
+
+
+
+/* faq section */
+.faq-section {
+  width: 100%;
+  background-color: #E9EDFF;
+  display: flex;
+  height: 40vh;
+}
+
+.faq-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.faq-content button {
+  padding: 10px 20px;
+  background-color: #5A31FC;
+  border: none;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.faq-content h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.faq-content h4 {
+  font-size: 0.6rem;
+  font-weight: 100;
+}
+
+.faq-content h4:last-of-type {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.faq-image {
+  width: 50%;
+  display: flex;
+}
+
+.faq-image img {
+  width: 70%;
+  margin-left: auto;
+}
+
+/* download */
+.download-section {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.download-content {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.download-content span {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.download-email form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.download-email input {
+  flex-grow: 2;
+  border: none;
+  background-color: rgba(111, 120, 201, 0.3);
+  border-radius: 10px;
+}
+
+.download-email input:focus {
+  outline: none;
+}
+
+.download-email form button {
+  border: none;
+  background: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+
+
+/* footer */
+.footer-section {
+  display: flex;
+  background-color: blue;
+  height: 20vh;
+  padding: 30px;
+  flex-flow: row wrap;
+}
+
+.footer-left {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-left .list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-left .list .list-items {
+  color: #fff;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.footer-left .list li:nth-last-child(-n+3) {
+  border-left: 2px solid #fff;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-left: 30px;
+}
+
+.footer-section>.footer-right {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 60px;
+}
+
+.footer-right div .footer-logos {
+  margin: 0 13px;
+}
+
+.logos-list {
+  display: flex;
+  list-style: none;
+}
+
+.logos-list .list-items {
+  margin: 0 10px;
+}
