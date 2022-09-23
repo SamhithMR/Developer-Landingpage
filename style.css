@@ -24,7 +24,7 @@ body {
 
 /* header */
 header {
-  background-color: blue;
+  background-color: #491bfd;
   color: #fff;
   height: 50vh;
   position: relative;
@@ -63,7 +63,7 @@ header div:first-of-type {
   position: absolute;
   top: 0;
   left: 0;
-  
+
 }
 
 .logo {
@@ -117,38 +117,43 @@ header div:last-of-type img {
   }
 }
 
-@media  (max-width:1024px){
+@media (max-width:1024px) {
 
- .header-image{
-  display: none;
- }
-.header-text {
-  max-width: 100%;
-  min-width: 70%;
-}
-
-.header-text h2 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.header-text p {
-  font-size: 1em;
-}
-}
-@media (min-width:320px) and (max-width:768px){
-  header{
-    height: 80vh;
+  .header-image {
+    display: none;
   }
-  
+
+  .header-text {
+    max-width: 100%;
+    min-width: 70%;
+  }
+
   .header-text h2 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: #000;
   }
-  
+
+  .header-text p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width:320px) and (max-width:768px) {
+  header {
+    height: 30vh;
+  }
+
+  .header-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
   .header-text p {
     font-size: 0.5em;
+  }
+  .companies a{
+    padding:  5px 10px;
   }
 }
 
@@ -196,31 +201,38 @@ header div:last-of-type img {
 
 
 /* blog section */
-
-.blog-heding {
-  /* padding: 40px 0;
-  margin: 40px 0; */
-}
-
-/* Blogs */
 .blog-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35vw, 45vw));
-  grid-gap: 20px;
-  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .blog-card {
-  /* columns: 2; */
+  background-color: #fff;
+  min-width: 30vh;
+  width: 100%;
+  border-radius: 40px 0 0 0;
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
-  /* filter:drop-shadow(.2rem .6rem 1rem rgba(0, 0, 0 , 0.2) ); */
-  box-shadow: .2rem .6rem 1rem rgba(0, 0, 0, 0.2);
-  /* border: 1px solid black; */
   position: relative;
-  border-radius: 40px 0 0 0;
-  min-width: 50%;
+  box-shadow: .2rem .6rem 1rem rgba(0, 0, 0, 0.2);
+}
+.blog-content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60%;
+  margin: auto 2rem;
+}
+.blog-content h6{
+  color: #491bfd;
+}
+.blog-content h6, .blog-content h3, .blog-content small{
+  margin: auto 0;
 }
 
 .blog-bottom {
@@ -235,9 +247,29 @@ header div:last-of-type img {
   right: 0;
   width: 50%;
 }
+.blog-image {
+  width: 50%;
+}
 
+.blog-image img {
+  width: 100%;
+}
 
+.blog-image {
+  float: right;
+}
 
+@media (max-width:900px) {
+  .blog-cards{
+    flex-direction: column;
+  }
+  .blog-content small{
+    font-size: 0.7rem;
+  }
+  .blog-author{
+    font-size: 0.7rem;
+  }
+}
 
 /* faq section */
 .faq-section {
@@ -289,6 +321,16 @@ header div:last-of-type img {
   margin-left: auto;
 }
 
+@media (max-width:900px)
+{
+  .faq-image{
+    display: none;
+  }
+  .faq-content {
+    width: 100%;}
+}
+
+
 /* download */
 .download-section {
   height: 20vh;
@@ -318,7 +360,7 @@ header div:last-of-type img {
 .download-email input {
   flex-grow: 2;
   border: none;
-  background-color: rgba(111, 120, 201, 0.3);
+  background-color: #6f78c94d;
   border-radius: 10px;
 }
 
@@ -328,8 +370,8 @@ header div:last-of-type img {
 
 .download-email form button {
   border: none;
-  background: blue;
-  color: white;
+  background: #491bfd;
+  color: #fff;
   border-radius: 10px;
   padding: 10px 25px;
 }
@@ -338,15 +380,19 @@ header div:last-of-type img {
   text-align: center;
 }
 
-
+@media (max-width:728px)
+{
+  .download-section{
+    flex-direction: column;
+  }
+}
 
 /* footer */
 .footer-section {
   display: flex;
-  background-color: blue;
+  background-color: #491bfd;
   height: 20vh;
   padding: 30px;
-  flex-flow: row wrap;
 }
 
 .footer-left {
@@ -397,4 +443,25 @@ header div:last-of-type img {
 
 .logos-list .list-items {
   margin: 0 10px;
+}
+
+@media (max-width:1024px) {
+  .footer-section{
+    flex-direction: column;
+  }
+  .footer-left{
+    width: 100%;
+    flex-direction: row;
+  }
+  .footer-section>.footer-right{
+    width:100%;
+    align-items: center;
+  }
+  .logos-list .list-items {
+    margin: 0 0px;
+  }
+  .footer-left .list .list-items{
+    margin-left: 5px;
+    padding-left: 5px;
+  }
 }
