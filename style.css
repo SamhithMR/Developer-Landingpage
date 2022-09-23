@@ -15,7 +15,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 300vh;
+  min-height: 100vh;
+  height:100%;
   position: relative;
 
 }
@@ -142,7 +143,6 @@ header div:last-of-type img {
   header {
     height: 30vh;
   }
-
   .header-text h2 {
     font-size: 2rem;
     font-weight: 600;
@@ -160,7 +160,7 @@ header div:last-of-type img {
 
 /* companies */
 .companies {
-  /* margin: 30px 0; */
+  margin: 30px 0;
 }
 
 .companies a {
@@ -323,6 +323,9 @@ header div:last-of-type img {
 
 @media (max-width:900px)
 {
+  .faq-section{
+    height:30vh;
+  }
   .faq-image{
     display: none;
   }
@@ -384,6 +387,7 @@ header div:last-of-type img {
 {
   .download-section{
     flex-direction: column;
+    height: 15vh;
   }
 }
 
@@ -446,6 +450,9 @@ header div:last-of-type img {
 }
 
 @media (max-width:1024px) {
+  .footer-section{
+    height: 10vh;
+  }
   .footer-section{
     flex-direction: column;
   }
