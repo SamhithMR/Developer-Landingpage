@@ -8,4 +8,4 @@ Develop a completely responsive landing Page.
 ## checkout live demo [here](https://samhith09.netlify.app/)
 
 ## screenshot
-![preview on desktop view]([https://github.com/SamhithMR/Developer-Landingpage/blob/main/assets/images/preview.jpg](https://github.com/SamhithMR/Developer-Landingpage/blob/main/preview.png))
+![preview](https://github.com/SamhithMR/Developer-Landingpage/blob/main/preview.png)
